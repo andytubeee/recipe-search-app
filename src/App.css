@@ -3,3 +3,7 @@
   justify-content: space-around;
   flex-wrap: wrap;
 }
+
+::-webkit-scrollbar {
+  display: none;
+}

@@ -3,10 +3,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import axios from 'axios';
 import Recipe from './Recipe.component.js';
 import './App.css';
+import 'dotenv/config';
 
 const App = () => {
-  const APP_ID = 'bbd0ec31';
-  const APP_KEY = '9c0870aaa3cb69c2d6135078ccd73173';
+  const APP_ID = process.env.REACT_APP_APP_ID;
+  const APP_KEY = process.env.REACT_APP_APP_KEY;
 
   const [qValue, set_qValue] = useState('');
   const [recipes, setRecipes] = useState([]);
